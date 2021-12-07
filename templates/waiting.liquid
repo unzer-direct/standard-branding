@@ -10,6 +10,7 @@
         </div>
         <div class="col-xs-12 text-center-xs">
           <p>{% t To complete the payment, open your Swish App on your mobile device and authorize the payment %}</p>
+          <p>{% t You have 3 minutes to complete the payment %}</p>
           <p><strong>{% t Waiting for authorization %}</strong></p>
         </div>
       {% else %}
@@ -20,7 +21,7 @@
           </h3>
         </div>
         <div class="col-xs-12 text-center-xs">
-          <p>{% t The process may take up to 5 minutes. %} <a href="{{ model.autorefresh_to }}">{% t Click here if processing takes a long time %}</a>.</p>
+          <p>{% t The process may take some time. %} <a href="{{ model.autorefresh_to }}">{% t Click here if processing takes a long time %}</a>.</p>
         </div>
       {% endif %}
     </div>

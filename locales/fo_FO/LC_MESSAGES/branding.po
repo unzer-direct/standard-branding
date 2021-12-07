@@ -35,18 +35,23 @@ msgid "To complete the payment, open your Swish App on your mobile device and au
 msgstr ""
 
 #: templates/waiting.liquid:13
+#, fuzzy
+msgid "You have 3 minutes to complete the payment"
+msgstr "Tú hevur fullført gjaldingina"
+
+#: templates/waiting.liquid:14
 msgid "Waiting for authorization"
 msgstr ""
 
-#: templates/waiting.liquid:19
+#: templates/waiting.liquid:20
 msgid "Please wait..."
 msgstr "Vinarliga bíða..."
 
-#: templates/waiting.liquid:23
+#: templates/waiting.liquid:24
 msgid "The process may take up to 5 minutes."
 msgstr "Viðgerðin kann taka upp til 5 minuttir."
 
-#: templates/waiting.liquid:23
+#: templates/waiting.liquid:24
 msgid "Click here if processing takes a long time"
 msgstr "Trýst her, um viðgerðing tekur langa tíð"
 
@@ -62,8 +67,10 @@ msgstr "Tá tú trýstir á knøttin niðanfyri, letur Sofort gjaldingar vindeyg
 #: templates/form/resurs.liquid:27 templates/form/sofort_ideal.liquid:16
 #: templates/form/paysafecard.liquid:12 templates/form/trustly.liquid:10
 #: templates/form/vipps.liquid:14 templates/form/paypal.liquid:12
-#: templates/form/bitcoin.liquid:28 templates/form/trustly_ideal.liquid:10
-#: templates/form/viabill.liquid:12 templates/form/sofort.liquid:9
+#: templates/form/bitcoin.liquid:28
+#: templates/form/mobilepay_subscriptions.liquid:11
+#: templates/form/trustly_ideal.liquid:10 templates/form/viabill.liquid:12
+#: templates/form/sofort.liquid:9 templates/form/klarnapayments.liquid:10
 #: templates/form/mobilepay.liquid:14
 msgid "When finished, you will be redirected back to your receipt."
 msgstr "Tá hetta er liðugt, verður tú leiddur víðari til kvittan tína."
@@ -71,8 +78,10 @@ msgstr "Tá hetta er liðugt, verður tú leiddur víðari til kvittan tína."
 #: templates/form/resurs.liquid:28 templates/form/sofort_ideal.liquid:17
 #: templates/form/paysafecard.liquid:13 templates/form/trustly.liquid:11
 #: templates/form/vipps.liquid:15 templates/form/swipp.liquid:9
-#: templates/form/paypal.liquid:13 templates/form/trustly_ideal.liquid:11
-#: templates/form/viabill.liquid:13 templates/form/sofort.liquid:10
+#: templates/form/paypal.liquid:13
+#: templates/form/mobilepay_subscriptions.liquid:12
+#: templates/form/trustly_ideal.liquid:11 templates/form/viabill.liquid:13
+#: templates/form/sofort.liquid:10 templates/form/klarnapayments.liquid:11
 #: templates/form/mobilepay.liquid:15
 msgid "Proceed to payment"
 msgstr "Halt á fram til gjalding"
@@ -86,8 +95,8 @@ msgstr "Tá tú trýstur á knøttin niðanfyri, letur ViaBill gjaldingar vindey
 msgid "Bank"
 msgstr ""
 
-#: templates/form/sofort_ideal.liquid:43 templates/form/trustly.liquid:47
-#: templates/form/klarna.liquid:102 templates/form/trustly_ideal.liquid:47
+#: templates/form/sofort_ideal.liquid:43 templates/form/trustly.liquid:40
+#: templates/form/klarna.liquid:102 templates/form/trustly_ideal.liquid:40
 #: templates/form/swish.liquid:19 templates/form_dankort_acs.liquid:35
 msgid "Proceed"
 msgstr "Halt fram"
@@ -108,10 +117,6 @@ msgstr ""
 
 #: templates/form/trustly.liquid:33 templates/form/trustly_ideal.liquid:33
 msgid "Last name"
-msgstr ""
-
-#: templates/form/trustly.liquid:40 templates/form/trustly_ideal.liquid:40
-msgid "Email"
 msgstr ""
 
 #: templates/form/vipps.liquid:13
@@ -190,6 +195,11 @@ msgstr ""
 #: templates/form/bitcoin.liquid:26
 msgid "Open in wallet"
 msgstr ""
+
+#: templates/form/mobilepay_subscriptions.liquid:10
+#, fuzzy
+msgid "When you click the button below, the MobilePay Subscriptions window will open."
+msgstr "Tá tú trýstur á knøttin niðanfyri, letur MobilePay gjaldingarvindeygað upp."
 
 #: templates/form/swish.liquid:12
 #, fuzzy
@@ -273,6 +283,11 @@ msgstr "Gjaldingar avgjald"
 msgid "Fill in card number"
 msgstr "Útfyll kortnummar "
 
+#: templates/form/klarnapayments.liquid:9
+#, fuzzy
+msgid "When you click the button below, the Klarna payment window will open."
+msgstr "Tá tú trýstir á knøttin niðanfyri, letur PayPal gjaldingarvindeygað upp."
+
 #: templates/form/mobilepay.liquid:13
 msgid "When you click the button below, the MobilePay payment window will open."
 msgstr "Tá tú trýstur á knøttin niðanfyri, letur MobilePay gjaldingarvindeygað upp."
@@ -299,7 +314,8 @@ msgid "You have completed the payment"
 msgstr "Tú hevur fullført gjaldingina"
 
 #: templates/layout.liquid:22
-msgid "Are you about to abort the payment. Are you sure?"
+#, fuzzy
+msgid "You are about to abort the payment. Are you sure?"
 msgstr "Tú ert um at strika tína gjalding. Ert tú vísur í hesum? "
 
 #: templates/layout.liquid:22

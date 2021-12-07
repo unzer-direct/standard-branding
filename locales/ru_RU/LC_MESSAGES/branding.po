@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-28 08:21+0000\n"
-"PO-Revision-Date: 2018-01-29 14:33+0000\n"
-"Last-Translator: Tonni Tølbøll Lund <ta@quickpay.net>\n"
+"PO-Revision-Date: 2020-04-08 21:47+0000\n"
+"Last-Translator: Roman <finansist@torokhtiy.com>\n"
 "Language-Team: Russian <http://translate.quickpay.net/projects/quickpay/standard-branding/ru/>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: templates/form.liquid:11
 msgid "Other Payment Methods"
@@ -28,25 +28,30 @@ msgstr "Карты"
 
 #: templates/waiting.liquid:8
 msgid "Open Swish App"
-msgstr ""
+msgstr "Приложение Open Swish"
 
 #: templates/waiting.liquid:12
 msgid "To complete the payment, open your Swish App on your mobile device and authorize the payment"
-msgstr ""
+msgstr "Чтобы завершить платеж, откройте приложение Swish на своем мобильном устройстве и авторизуйте платеж"
 
 #: templates/waiting.liquid:13
+#, fuzzy
+msgid "You have 3 minutes to complete the payment"
+msgstr "Вы завершили платеж"
+
+#: templates/waiting.liquid:14
 msgid "Waiting for authorization"
-msgstr ""
+msgstr "Ожидает авторизацию"
 
-#: templates/waiting.liquid:19
+#: templates/waiting.liquid:20
 msgid "Please wait..."
-msgstr "Подождите..."
+msgstr "Пожалуйста подождите..."
 
-#: templates/waiting.liquid:23
+#: templates/waiting.liquid:24
 msgid "The process may take up to 5 minutes."
 msgstr "Процесс может занять до 5 минут."
 
-#: templates/waiting.liquid:23
+#: templates/waiting.liquid:24
 msgid "Click here if processing takes a long time"
 msgstr "Нажмите сюда, если обработка занимает много времени"
 
@@ -55,15 +60,16 @@ msgid "Starting 3D Secure payment. Please wait..."
 msgstr "Запуск оплаты 3D Secure. Пожалуйста, подождите..."
 
 #: templates/form/resurs.liquid:26
-#, fuzzy
 msgid "When you click the button below, the Resurs payment window will open."
-msgstr "При нажатии на кнопку ниже откроется окно платежа Trustly."
+msgstr "При нажатии на кнопку ниже откроется окно платежа Ресурс."
 
 #: templates/form/resurs.liquid:27 templates/form/sofort_ideal.liquid:16
 #: templates/form/paysafecard.liquid:12 templates/form/trustly.liquid:10
 #: templates/form/vipps.liquid:14 templates/form/paypal.liquid:12
-#: templates/form/bitcoin.liquid:28 templates/form/trustly_ideal.liquid:10
-#: templates/form/viabill.liquid:12 templates/form/sofort.liquid:9
+#: templates/form/bitcoin.liquid:28
+#: templates/form/mobilepay_subscriptions.liquid:11
+#: templates/form/trustly_ideal.liquid:10 templates/form/viabill.liquid:12
+#: templates/form/sofort.liquid:9 templates/form/klarnapayments.liquid:10
 #: templates/form/mobilepay.liquid:14
 msgid "When finished, you will be redirected back to your receipt."
 msgstr "Когда вы закончите, вас перенаправят обратно к Вашему чеку."
@@ -71,31 +77,31 @@ msgstr "Когда вы закончите, вас перенаправят об
 #: templates/form/resurs.liquid:28 templates/form/sofort_ideal.liquid:17
 #: templates/form/paysafecard.liquid:13 templates/form/trustly.liquid:11
 #: templates/form/vipps.liquid:15 templates/form/swipp.liquid:9
-#: templates/form/paypal.liquid:13 templates/form/trustly_ideal.liquid:11
-#: templates/form/viabill.liquid:13 templates/form/sofort.liquid:10
+#: templates/form/paypal.liquid:13
+#: templates/form/mobilepay_subscriptions.liquid:12
+#: templates/form/trustly_ideal.liquid:11 templates/form/viabill.liquid:13
+#: templates/form/sofort.liquid:10 templates/form/klarnapayments.liquid:11
 #: templates/form/mobilepay.liquid:15
 msgid "Proceed to payment"
 msgstr "Перейти к оплате"
 
 #: templates/form/sofort_ideal.liquid:15 templates/form/trustly_ideal.liquid:9
-#, fuzzy
 msgid "When you click the button below, the iDeal payment window will open."
-msgstr "При нажатии на кнопку ниже откроется окно платежа ViaBill."
+msgstr "При нажатии на кнопку ниже откроется окно платежа  iDeal."
 
 #: templates/form/sofort_ideal.liquid:32
 msgid "Bank"
-msgstr ""
+msgstr "Банк"
 
-#: templates/form/sofort_ideal.liquid:43 templates/form/trustly.liquid:47
-#: templates/form/klarna.liquid:102 templates/form/trustly_ideal.liquid:47
+#: templates/form/sofort_ideal.liquid:43 templates/form/trustly.liquid:40
+#: templates/form/klarna.liquid:102 templates/form/trustly_ideal.liquid:40
 #: templates/form/swish.liquid:19 templates/form_dankort_acs.liquid:35
 msgid "Proceed"
 msgstr "Далее"
 
 #: templates/form/paysafecard.liquid:11
-#, fuzzy
 msgid "When you click the button below, the paysafecard payment window will open."
-msgstr "При нажатии на кнопку ниже откроется окно платежа PayPal."
+msgstr "При нажатии на кнопку ниже откроется окно платежа оплатить безопасно картой."
 
 #: templates/form/trustly.liquid:9
 msgid "When you click the button below, the Trustly payment window will open."
@@ -109,14 +115,9 @@ msgstr "Имя"
 msgid "Last name"
 msgstr "Фамилия"
 
-#: templates/form/trustly.liquid:40 templates/form/trustly_ideal.liquid:40
-msgid "Email"
-msgstr "Электронная почта"
-
 #: templates/form/vipps.liquid:13
-#, fuzzy
 msgid "When you click the button below, the Vipps payment window will open."
-msgstr "При нажатии на кнопку ниже откроется окно платежа ViaBill."
+msgstr "При нажатии на кнопку ниже откроется окно платежа Vipps."
 
 #: templates/form/swipp.liquid:3
 msgid "When you click the button below, the Swipp payment window will open. When finished, you will be redirected back to your receipt."
@@ -189,6 +190,11 @@ msgstr "Не удалось скопировать адрес Bitcoin в ваш 
 #: templates/form/bitcoin.liquid:26
 msgid "Open in wallet"
 msgstr "Открыть в кошельке"
+
+#: templates/form/mobilepay_subscriptions.liquid:10
+#, fuzzy
+msgid "When you click the button below, the MobilePay Subscriptions window will open."
+msgstr "При нажатии на кнопку ниже откроется окно платежа MobilePay."
 
 #: templates/form/swish.liquid:12
 msgid "Mobile number"
@@ -271,6 +277,11 @@ msgstr "Комиссия за платеж"
 msgid "Fill in card number"
 msgstr "Укажите номер карты"
 
+#: templates/form/klarnapayments.liquid:9
+#, fuzzy
+msgid "When you click the button below, the Klarna payment window will open."
+msgstr "При нажатии на кнопку ниже откроется окно платежа PayPal."
+
 #: templates/form/mobilepay.liquid:13
 msgid "When you click the button below, the MobilePay payment window will open."
 msgstr "При нажатии на кнопку ниже откроется окно платежа MobilePay."
@@ -296,7 +307,8 @@ msgid "You have completed the payment"
 msgstr "Вы завершили платеж"
 
 #: templates/layout.liquid:22
-msgid "Are you about to abort the payment. Are you sure?"
+#, fuzzy
+msgid "You are about to abort the payment. Are you sure?"
 msgstr "Вы собираетесь отменить платеж. Вы уверены?"
 
 #: templates/layout.liquid:22
@@ -358,3 +370,6 @@ msgstr "Повторить попытку"
 #: templates/form_dankort_acs.liquid:4
 msgid "When you click the button below, the Dankort payment window will open. When finished, you will be redirected back to your receipt."
 msgstr "При нажатии на кнопку ниже откроется окно платежа Dankort. Когда вы закончите, вас перенаправят обратно к вашему чеку."
+
+#~ msgid "Email"
+#~ msgstr "Электронная почта"

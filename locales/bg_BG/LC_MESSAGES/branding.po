@@ -3,20 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-28 08:21+0000\n"
-"PO-Revision-Date: 2016-10-28 08:21+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2020-04-30 06:46+0000\n"
+"Last-Translator: Mitko Tsonev <mitko@valkrea.house>\n"
+"Language-Team: Bulgarian <http://translate.quickpay.net/projects/quickpay/standard-branding/bg/>\n"
+"Language: bg_BG\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: templates/form.liquid:11
 msgid "Other Payment Methods"
@@ -28,25 +28,30 @@ msgstr "Карти"
 
 #: templates/waiting.liquid:8
 msgid "Open Swish App"
-msgstr ""
+msgstr "Отвори Swish"
 
 #: templates/waiting.liquid:12
 msgid "To complete the payment, open your Swish App on your mobile device and authorize the payment"
-msgstr ""
+msgstr "Отвори приложението Swish от смартфона и потвърди плащането"
 
 #: templates/waiting.liquid:13
-msgid "Waiting for authorization"
-msgstr ""
+#, fuzzy
+msgid "You have 3 minutes to complete the payment"
+msgstr "Плащането е завършено"
 
-#: templates/waiting.liquid:19
+#: templates/waiting.liquid:14
+msgid "Waiting for authorization"
+msgstr "Изчакване на одобрение"
+
+#: templates/waiting.liquid:20
 msgid "Please wait..."
 msgstr "Моля, изчакайте..."
 
-#: templates/waiting.liquid:23
+#: templates/waiting.liquid:24
 msgid "The process may take up to 5 minutes."
 msgstr "Процесът може да отнеме до 5 минути."
 
-#: templates/waiting.liquid:23
+#: templates/waiting.liquid:24
 msgid "Click here if processing takes a long time"
 msgstr "Кликнете тук, ако обработката отнема много време"
 
@@ -62,8 +67,10 @@ msgstr "Когато кликнете върху бутона по-долу, щ�
 #: templates/form/resurs.liquid:27 templates/form/sofort_ideal.liquid:16
 #: templates/form/paysafecard.liquid:12 templates/form/trustly.liquid:10
 #: templates/form/vipps.liquid:14 templates/form/paypal.liquid:12
-#: templates/form/bitcoin.liquid:28 templates/form/trustly_ideal.liquid:10
-#: templates/form/viabill.liquid:12 templates/form/sofort.liquid:9
+#: templates/form/bitcoin.liquid:28
+#: templates/form/mobilepay_subscriptions.liquid:11
+#: templates/form/trustly_ideal.liquid:10 templates/form/viabill.liquid:12
+#: templates/form/sofort.liquid:9 templates/form/klarnapayments.liquid:10
 #: templates/form/mobilepay.liquid:14
 msgid "When finished, you will be redirected back to your receipt."
 msgstr "Когато сте готови, ще бъдете пренасочени обратно към Вашата разписка."
@@ -71,8 +78,10 @@ msgstr "Когато сте готови, ще бъдете пренасочен
 #: templates/form/resurs.liquid:28 templates/form/sofort_ideal.liquid:17
 #: templates/form/paysafecard.liquid:13 templates/form/trustly.liquid:11
 #: templates/form/vipps.liquid:15 templates/form/swipp.liquid:9
-#: templates/form/paypal.liquid:13 templates/form/trustly_ideal.liquid:11
-#: templates/form/viabill.liquid:13 templates/form/sofort.liquid:10
+#: templates/form/paypal.liquid:13
+#: templates/form/mobilepay_subscriptions.liquid:12
+#: templates/form/trustly_ideal.liquid:11 templates/form/viabill.liquid:13
+#: templates/form/sofort.liquid:10 templates/form/klarnapayments.liquid:11
 #: templates/form/mobilepay.liquid:15
 msgid "Proceed to payment"
 msgstr "Продължете към плащането"
@@ -84,10 +93,10 @@ msgstr "Когато кликнете върху бутона по-долу, щ�
 
 #: templates/form/sofort_ideal.liquid:32
 msgid "Bank"
-msgstr ""
+msgstr "Банка"
 
-#: templates/form/sofort_ideal.liquid:43 templates/form/trustly.liquid:47
-#: templates/form/klarna.liquid:102 templates/form/trustly_ideal.liquid:47
+#: templates/form/sofort_ideal.liquid:43 templates/form/trustly.liquid:40
+#: templates/form/klarna.liquid:102 templates/form/trustly_ideal.liquid:40
 #: templates/form/swish.liquid:19 templates/form_dankort_acs.liquid:35
 msgid "Proceed"
 msgstr "Продължете"
@@ -108,10 +117,6 @@ msgstr "Име"
 #: templates/form/trustly.liquid:33 templates/form/trustly_ideal.liquid:33
 msgid "Last name"
 msgstr "Фамилия"
-
-#: templates/form/trustly.liquid:40 templates/form/trustly_ideal.liquid:40
-msgid "Email"
-msgstr "Имейл"
 
 #: templates/form/vipps.liquid:13
 #, fuzzy
@@ -189,6 +194,11 @@ msgstr "Биткойн адресът не можа да се копира въ�
 #: templates/form/bitcoin.liquid:26
 msgid "Open in wallet"
 msgstr "Отворете в портфейла"
+
+#: templates/form/mobilepay_subscriptions.liquid:10
+#, fuzzy
+msgid "When you click the button below, the MobilePay Subscriptions window will open."
+msgstr "Когато кликнете върху бутона по-долу, ще се отвори прозорец за плащания в MobilePay."
 
 #: templates/form/swish.liquid:12
 msgid "Mobile number"
@@ -271,6 +281,11 @@ msgstr "Такса за плащането"
 msgid "Fill in card number"
 msgstr "Попълнете номера на картата"
 
+#: templates/form/klarnapayments.liquid:9
+#, fuzzy
+msgid "When you click the button below, the Klarna payment window will open."
+msgstr "Когато кликнете върху бутона по-долу, ще се отвори прозорец за плащане в PayPal."
+
 #: templates/form/mobilepay.liquid:13
 msgid "When you click the button below, the MobilePay payment window will open."
 msgstr "Когато кликнете върху бутона по-долу, ще се отвори прозорец за плащания в MobilePay."
@@ -296,7 +311,8 @@ msgid "You have completed the payment"
 msgstr "Плащането е завършено"
 
 #: templates/layout.liquid:22
-msgid "Are you about to abort the payment. Are you sure?"
+#, fuzzy
+msgid "You are about to abort the payment. Are you sure?"
 msgstr "Напът сте да прекратите плащането. Потвърждавате ли?"
 
 #: templates/layout.liquid:22
@@ -358,3 +374,6 @@ msgstr "Опитайте отново"
 #: templates/form_dankort_acs.liquid:4
 msgid "When you click the button below, the Dankort payment window will open. When finished, you will be redirected back to your receipt."
 msgstr "Когато кликнете върху бутона по-долу, ще се отвори прозорец за плащания в Dankort. Когато сте готови, ще бъдете пренасочени обратно към Вашата разписка."
+
+#~ msgid "Email"
+#~ msgstr "Имейл"
